@@ -55,7 +55,8 @@ class Espacio:
         self.stepTiempo=self.stepTiempo/1.5
         self.CiclosSoloCalcula=self.CiclosSoloCalcula*1.5
     def PrintDatos(self):
-        print("hola")
+        #print("hola")
+        pass
     def Inicio(self):
         self.ObjetosPenUp()
         for i,PlanetaT in enumerate(self.ListaPlanetasTurtle):
@@ -192,10 +193,10 @@ Espacio=Espacio([Tierra,Luna],[Nave],[TierraT,LunaT],[NaveT],100,100,0.000008)
 screen = turtle.Screen()#debe llamarse screen (o cambiar Espacio.Bucle())
 screen.setup(width=1.0, height=1.0)
 screen.onkey(screen.bye, "q")
-screen.onkey(Espacio.ZoomIn,"+")
-screen.onkey(Espacio.ZoomOut,"-")
-screen.onkey(Espacio.VTiempoUp,".")
-screen.onkey(Espacio.VTiempoDown,",")
+screen.onkey(Espacio.ZoomIn,"plus")
+screen.onkey(Espacio.ZoomOut,"minus")
+screen.onkey(Espacio.VTiempoUp,"period")
+screen.onkey(Espacio.VTiempoDown,"comma")
 screen.onkey(Nave.ThrottleUp,"a")
 screen.onkey(Nave.ThrottleDown,"z")
 screen.onkey(Nave.ThrottleCut,"x")
